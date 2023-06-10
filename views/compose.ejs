@@ -1,0 +1,18 @@
+<%- include('header'); %>.
+<div class="container p-5 row justify-content-center text-center">
+<form class="col-6" action="/compose" method="post">
+    <div class="mb-3">
+        <label for="title" class="form-label">Post title</label>
+        <input type="text" class="form-control" name="title">
+    </div>
+    <div class="mb-3">
+        <label for="content" class="form-label">Let if flow.</label>
+        <textarea class="form-control" name="content" rows="3"></textarea>
+    </div>
+    <div>
+        <button type="submit">Submit Post</button>
+    </div>
+</form>
+</div>
+
+<%- include('footer'); %>.

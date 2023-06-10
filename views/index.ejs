@@ -1,0 +1,25 @@
+<%- include('header'); %>.
+    <h1>My blog</h1>
+    <br>
+    <br>
+    <% for (var i = 0; i < allPosts.length; i++) { %>
+        <% if (i === 0)  { %>
+            <h2><%= allPosts[i].title %></h2>
+            <br>
+            <p><%= allPosts[i].content %></p>
+        <% } else {%>
+            <h2>
+                <%= allPosts[i].title %>
+            </h2>
+            <p>
+                <%= allPosts[i].content %>
+            </p>
+        <% } %>
+    <% } %>
+
+
+        <script>
+            console.log("hello!");
+        </script>
+    <%- include('footer'); %>.
+
